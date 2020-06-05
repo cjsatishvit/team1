@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS defaulters;
+CREATE TABLE defaulters
+(defaulterid int(6) NOT NULL PRIMARY KEY,
+defaultername varchar(45) NOT NULL,
+ loantype varchar(20) NOT NULL,
+totalamount int(20) NOT NULL,
+recoveredamount int(20) NULL,
+comments varchar(60) NULL,
+manager int(5) NOT NULL,
+agent int(5) NULL);
+
+
+
+DROP TABLE IF EXISTS login;
+CREATE TABLE login
+(id int(5) NOT NULL,
+password varchar(20) NOT NULL,
+ph int(10) NOT NULL,
+type varchar(30) NOT NULL);
