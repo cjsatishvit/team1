@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/RAJEEV/Downloads/jar_files.zip"/>
+	<classpathentry kind="lib" path="C:/Users/RAJEEV/Downloads/jar_files (1).zip"/>
+	<classpathentry kind="lib" path="C:/Users/RAJEEV/Desktop/jsp-api-2.1-6.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RAJEEV/Desktop/servlet-api-2.5-6.0.2.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
