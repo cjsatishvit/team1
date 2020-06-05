@@ -13,8 +13,8 @@ public class Database {
         try {
 
             /*NOTE: Used to create a cmd command*/
-            String executeCmd = "mysqldump -u" + username + " -p" + password + " " + databaseName + " -r " + outputFile;
-
+            //String executeCmd = "mysqldump -u" + username + " -p" + password + " " + databaseName + " -r " + outputFile;
+            String executeCmd = "mysqldump --database "+databaseName+" --user="+username+" --password="+password+" > "+outputFile;
             /*NOTE: Executing the command here*/
             Process runtimeProcess = Runtime.getRuntime().exec(executeCmd);
             int processComplete = runtimeProcess.waitFor();
@@ -38,8 +38,8 @@ public class Database {
         try {
 
             /*NOTE: Used to create a cmd command*/
-            String executeCmd = "mysqldump -u" + username + " -p" + password + " " + databaseName + " < " + outputFile;
-
+           // String executeCmd = "mysqldump -u" + username + " -p" + password + " " + databaseName + " < " + outputFile;
+            String executeCmd = "mysqldump --database "+databaseName+" --user="+username+" --password="+password+" < "+outputFile;
             /*NOTE: Executing the command here*/
             Process runtimeProcess = Runtime.getRuntime().exec(executeCmd);
             int processComplete = runtimeProcess.waitFor();
